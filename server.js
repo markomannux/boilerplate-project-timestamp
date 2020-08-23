@@ -36,6 +36,7 @@ app.get("/api/timestamp/:date_string?", (req, res) => {
     if (!isValidDate(date)) {
 
       res.json({error: "Invalid date"});
+      return;
     }
   }
 
